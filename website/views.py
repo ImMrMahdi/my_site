@@ -3,10 +3,10 @@ from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 
 def index_view (request):
-    return HttpResponse('home_view')
+    return render(request , 'website/index.html')
 
 def contact_view (request):
-    return HttpResponse('contact_view')
+    return render(request , 'website/contact.html')
 
 def about_view (request):
-    return HttpResponse('about_view')
+    return render(request , 'website/about.html')
